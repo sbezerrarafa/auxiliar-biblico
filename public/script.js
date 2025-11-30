@@ -174,5 +174,3 @@ function toggleButtons(disabled) {
 }
 
 
-
-document.addEventListener('DOMContentLoaded', loadHistory);
