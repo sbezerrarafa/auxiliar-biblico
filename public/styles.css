@@ -1,0 +1,151 @@
+/* public/style.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #37465a; /* Cor de tema */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  z-index: 1000;
+  transition: opacity 0.5s;
+}
+
+.splash img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 20px;
+}
+
+.topo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.topo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 1.8em;
+  color: #37465a;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  resize: vertical;
+}
+
+.button-group button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+  background-color: #37465a;
+  color: white;
+}
+
+.button-group button.estudo {
+  background-color: #007bff;
+}
+
+.button-group button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.button-group button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#response {
+  margin-top: 25px;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background-color: #fafafa;
+  min-height: 50px; /* Para manter o layout */
+  white-space: pre-wrap; /* Preserve newlines */
+  word-wrap: break-word; /* Wrap long words */
+}
+
+#response pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: inherit;
+  margin: 0;
+}
+
+.loading {
+  color: #007bff;
+  font-style: italic;
+}
+
+.error {
+  color: red;
+}
+
+.container-button {
+  text-align: right;
+  margin-top: 15px;
+}
+
+#copyButton {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#copyButton.hidden {
+  display: none;
+}
