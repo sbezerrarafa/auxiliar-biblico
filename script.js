@@ -64,7 +64,7 @@ async function warmUpGemini() {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(requestBody),
-      timeout: 5000 // Apenas 5 segundos para o warm-up
+      timeout: 20000 // Apenas 5 segundos para o warm-up
     });
     console.log("✅ Gemini Warm-up bem-sucedido ou iniciado em segundo plano.");
   } catch (error) {
